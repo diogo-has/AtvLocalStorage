@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -36,7 +37,7 @@ body {
 .img-style {
     width: 250px;
     position: absolute;
-    top: 70px;
+    top: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
@@ -45,8 +46,65 @@ body {
 
 input {
     color: white;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(88, 5, 121, 0.596) 0px 7px 29px 0px;
     background-color: #6a0bdb;
     border: none;
+    border-radius: 2px;
     padding: 20px 40px;
+    transition: all 200ms ease;
+}
+
+input::placeholder {
+    color: #AAA;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: rgba(88, 5, 121, 0.596) 0px 8px 24px; 
+    transform: translate(0, -1px);
+    transition: all 200ms ease;
+}
+
+input:hover {
+    cursor: default;
+}
+
+.key {
+    opacity: .7;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    transition: all 200ms ease;
+}
+
+.key:hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 7px;
+    width: 9rem;
+    background-color: #690bdba8;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(88, 5, 121, 0.596) 0px 7px 29px 0px;
+    transition: all 200ms ease;
+    color: white;
+}
+
+button:active {
+    transform: translate(0, 2px);
+    transition: all 200ms ease;
+}
+
+.error-div {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 3%;
+    background-color: crimson;
+    padding: 2rem;    
+    border-radius: 2px;
 }
