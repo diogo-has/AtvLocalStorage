@@ -14,8 +14,8 @@ function login() {
 
     if (!(nome && senha && nome === 'admin' && senha === '12345')) {
         document.getElementById('error-modal').style.display = 'flex';
-        return
-    };
+        return;
+    }
 
     const user = {
         name: nome,

@@ -103,8 +103,9 @@ button:active {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 3%;
+    bottom: 10px;
     background-color: crimson;
     padding: 2rem;    
     border-radius: 2px;
+    gap: 10px;
 }
