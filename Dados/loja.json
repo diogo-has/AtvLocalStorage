@@ -2,26 +2,26 @@
     {
         "id": 1,
         "desc": "Perfume Ionized Rose",
-        "img": "",
-        "preco":200.00
+        "img": "../Imagens/img1.jpg",
+        "preco": 200.00
     },
     {
         "id": 2,
         "desc": "Perfume Azure Bluet",
-        "img": "",
-        "preco":200.00
+        "img": "../Imagens/img2.webp",
+        "preco": 200.00
     },
     {
         "id": 3,
         "desc": "Perfume Celestial Strawberry",
-        "img": "",
-        "preco":990.00,
+        "img": "../Imagens/img3.webp",
+        "preco": 990.00,
         "discount": 799.99 
     },
     {
         "id": 4,
         "desc": "Perfume Electric Sunflower",
-        "img": "",
-        "preco":200.00
+        "img": "../Imagens/img5.jpg",
+        "preco": 200.00
     }
 ]

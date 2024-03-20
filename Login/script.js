@@ -1,3 +1,5 @@
+const enter = (event) => {if (event.keyCode === 13) login();}
+
 const showPass = () => {
     var inputSenha = document.querySelector('#senha');
 
@@ -17,9 +19,11 @@ function login() {
         return;
     }
 
+    var a = new Date();
+
     const user = {
         name: nome,
-        dataEntrada: new Date(),
+        dataEntrada: formatDate(new Date()),
         id: Math.floor(Math.random() * 100000)
     }
 
@@ -27,4 +31,17 @@ function login() {
     window.location.href = '../Loja'
 }
 
+function formatDate(data) {
+    var options = {
+        month: "numeric",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric"
+    }
+
+    return data.toLocaleString('pt-BR', options);
+}
+
 const fecharModal = () => $('#error-modal').css('display', 'none');
+
+
