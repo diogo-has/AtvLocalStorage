@@ -36,5 +36,16 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }).catch((error) => console.log('Erro ao carregar o arquivo JSON', error));
 
+
+        $('#produtos-container').on('click', '.btn-adicionar-ao-carrinho', function() {
+            const indexProduto = $(this).data('indice');
+            const produtoSelecionado = produtos[indexProduto];
+
+            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push(produtoSelecionado);
+            localStorage.setItem('carrinho', JSON.stringify(carrinho))
+            alert('Produto adicionado ao carrinho');
+        })
+
 })
 
